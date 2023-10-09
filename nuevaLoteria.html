@@ -1,0 +1,616 @@
+<!-- 
+        -----------------------------------------------------------------------
+                PATRONATO NACIONAL DE LA INFANCIA (PANI)
+                        Gobierno de la Republica
+                      Departamento de Informatica
+              Analisis, diseño y programacion de sitio web
+                             Año 2023
+
+          Equipo:
+          1) Licdo. Arnold Alexander Caballero Garcia  
+             APORTO EN: (Analisis y diseño del sistema, Analisis de base de datos, programación)
+          2) Ing. Luis Fernando Cambar Vallecillo 
+             APORTO EN: (Analisis y diseño del sistema, Analisis de base de datos)
+
+          Revisado y aprobado por:
+          Ing. Luis Fernando Cambar Vallecillo
+
+        ---------------------------------------------------------------------
+            Programa:         index del sitio web
+            Fecha:            1/23/2023 
+            Programador:      Arnold Alexander Caballero Garcia
+            descripcion:      Index del sitio web, muestra la nueva modalidad
+            @versión 1.0
+        -----------------------------------------------------------------------
+          Historial de Cambio
+        -----------------------------------------------------------------------
+            Programador               Fecha                      Descripcion
+          
+        ----------------------------------------------------------------------->
+<!---------------------------------------INICIO DE MENU--------------------------------------->
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>PANI-Instituto Nacional de la Infancia</title>
+     <link rel="icon" href="img/pani1.png" type="image/png">
+ 
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/bootstrap-icons.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+     <link href="css/style.css" rel="stylesheet"/>
+     <link href="css/style_bottom.css" rel="stylesheet"/>
+ 
+     <link rel="stylesheet" href="Plugins/animate/animate.min.css">    
+     <link rel="stylesheet" href="Plugins/sweetalert2/sweetalert2.min.css">
+     <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+ 
+ 
+     <link rel="icon" href="/img/pani1.png" type="image/png">
+ 
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/bootstrap-icons.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+     <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+ 
+ <!--Inicio, Items Header-->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed p-2" id="main_navbar">
+     <div class="container-fluid">
+    <a class="navbar-brand" href="" style="background-color: transparent !important;"><!--Referencia del logo de la empresa-->
+     <img src="img/pani1.png" class="margin d-block" alt="logo-pani" width="160px">
+   </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+       <ul class="navbar-nav mx-auto mb-lg-0">
+         <li class="nav-item">
+           <a class="nav-link active" aria-current="page" href="index.php">
+             Inicio
+           </a>
+         </li>
+         <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Sorteos
+           </a>
+           <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#loteriaMayor">Lotería Mayor</a></li>
+             <li><a class="dropdown-item" href="#" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#loteriaMenor">Lotería Menor</a></li>
+             <li><a class="dropdown-item" href="#" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#">Lotería La Grande</a></li>
+             <li><a class="dropdown-item" href="#" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#">Lotería La Chica</a></li>
+             
+           </ul>
+         </li>
+         <li class="nav-item">
+         <a class="nav-link" href="" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#ModalPremios">
+           Premios</a>
+         </li>
+ 
+         <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown">
+                Institución
+               </a>
+               <ul class="dropdown-menu">
+                 <li class="nav-item dropdown"><!--Quienes somos-->
+                   <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                     Quienes Somos
+                   </a>
+                   <ul class="dropdown-menu">
+                     <!--<li><a class="dropdown-item" href="institucion.php">Historia</a></li>-->
+                     <li><a class="dropdown-item" href="institucion.php">Misión/Visión</a></li>
+                     <li><a class="dropdown-item" href="institucion.php">Valores</a></li>
+                     <li><hr class="dropdown-divider"/></li>
+                     <li><a class="dropdown-item" href="img/organigrama.jpg" target="_blank">Organigrama</a></li>   
+                   </ul>
+                 </li><!--Quienes somos-->
+ 
+                 <li class="nav-item dropdown"><!--Direccion-->
+                   <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                     Direcciones
+                   </a>
+                   <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Dirección Ejecutiva</a></li>
+                     <li><a class="dropdown-item" href="#">Sub dirección Ejecutiva</a></li>
+ 
+                   </ul>
+                 </li><!--Direccion-->
+ 
+                 <li class="nav-item dropdown"><!--Secretaria-->
+                   <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                     Secretaria
+                   </a>
+                   <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="#">Secretaria General</a></li>
+                     <li><a class="dropdown-item" href="#">Asesoría legal</a></li>
+                   </ul>
+                 </li><!--Secretaria-->
+ 
+ 
+                 <li class="nav-item dropdown"><!--Unidades-->
+                   <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                     Unidades
+                   </a>
+                   <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="#">Unid. de Relaciones Públicas</a></li>
+                     <li><a class="dropdown-item" href="#">Unid. de Planificación</a></li>
+                     <li><a class="dropdown-item" href="autoridades.php">Unid. de Informática</a></li>
+                     <?php
+                     $option = 1;
+                     // '<li><a class="dropdown-item" href="autoridades.php">Unid. de Informática</a></li>'
+                     ?>
+                   </ul>
+                 </li><!--Unidades-->
+ 
+                 <li class="nav-item dropdown"><!--Gerencias-->
+                   <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                     Gerencias
+                   </a>
+                   <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="#">Gcia. de Imprenta</a></li>
+                     <li><a class="dropdown-item" href="#">Gcia. de Comercialización</a></li>
+                     <li><a class="dropdown-item" href="#">Gcia. Administrativa</a></li>
+                     <li><a class="dropdown-item" href="#">Gcia. Financiera</a></li>
+                   </ul>
+                 </li>              
+               </ul>
+             </li>
+ 
+         <li class="nav-item">
+           <a class="nav-link" href="contacto.php">
+             Contacto
+           </a>
+         </li>
+         <!-- Item Nueva Modalidad -->
+         <li class="nav-item">
+           <a class="nav-link animated-button1" href="nuevaLoteria.php">
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+             Nueva-Modalidad
+           </a>
+         </li>
+       </ul>
+     </div>
+   </div>
+ </nav><!--Fin items del Header-->
+ 
+ <div id="fb-root"></div>
+ <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="VpSfLOcE"></script>
+    <!--CODIGO CONSULTA DE NUMEROS PREMIADOS LOTERIA MAYOR Y MENOR con Ventana Modales-->
+ <div class="modal fade" id="ModalPremios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h1 style ="display:none;" class="modal-title fs-5 text-center" id="Modallabel">Consulta de premios <strong> 'La Grande'</strong></h1>
+         <h1 style ="display:none;" class="modal-title fs-5 text-center" id="Modallabe2">Consulta de premios <strong> 'La Chica'</strong></h1>
+         <h1 class="modal-title fs-5 text-center" id="Modallabe" >Consulta de premios</h1>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+         <div class="modal-body">
+           <form id="formul">
+           <div class="form-group">
+             <!--input tipo Loteria-->
+                 <div class="form-floating mb-3">
+                   <select class="form-select" id ="select-tipo-sorteo" aria-label="Floating label select example" style="background-image: url(img/40319.png)">
+                     <option  autofocus selected disabled>--Seleccione--</option>
+                     <option value = "1">Mayor</option>
+                     <option value = "2">Menor</option>
+                   </select>
+                   <label for="floatingSelect">Loteria</label>
+                 </div>
+             <!--input sorteo-->
+                 <div class="form-floating mb-3">
+                   <input style ="display:none;" type = "number"  class="form-control" minlength="4" maxlength="4" id="sorteo-premio" name="sorteo-premio" placeholder="name@example.com">
+                   <label style ="display:none;" for="floatingInput" id="sorteo-label">Sorteo</label>
+                 </div>
+             <!--input billete-->
+                 <div class="form-floating mb-3">
+                   <input style ="display:none;" type = "number" class="form-control" min = "0" max = "99999" id="billete-premio" placeholder="name@example.com" >
+                   <label style ="display:none;"  for="floatingInput" id="billete-label">Billete</label>
+                 </div>
+             <!--input numero-->
+                 <div class="form-floating mb-3">
+                   <input style ="display:none;" type = "number" class="form-control" min = "1" max = "2" id="numero-premio" placeholder="name@example.com">
+                   <label style ="display:none;" for="floatingInput" id="numero-label">Numero</label>
+                 </div>
+             <!--input serie-->
+                 <div class="form-floating mb-3">
+                   <input style ="display:none;" type="number" class="form-control" min = "0" max = "99999" id="serie-premio" placeholder="name@example.com">
+                   <label style ="display:none;" for="floatingInput"  id="serie-label">Serie</label>
+                 </div>
+             <!--Button-->
+                     <span id='btn-consulta-premio' class="btn btn-primary" style='margin-top:10px; width:100%' onclick="consultar_premio()">CONSULTAR PREMIO <i class="bi-send"></i></span>
+           </div>
+           </form>
+         </div>
+         <div class="modal-footer">
+            <div class="container" id="respuesta-consulta-premio"></div>
+          </div>
+   </div>
+ </div>
+ </div>
+ <!--fIN DECODIGO CONSULTA DE NUMEROS PREMIADOS LOTERIA MAYOR Y MENOR con Ventana Modales-->
+ 
+ <!-------------------------------------------------------------------------------------------------------
+ ----------CONSULTANDO API-REST-PANI DE LOS NUMEROS PREMIADOS DE LOS SORTEOS RECIEN JUGADOS---------------
+ --------------------------------------------------------------------------------------------------------->  
+ <!--Inicio modal loteria Mayor-->
+     <div class="modal fade" id="loteriaMayor" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-hidden="true" style="display: none;">
+       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Lotería Mayor</h1>
+             <a href="index.php"> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+           </div>
+           <div class="modal-body">
+             <div class="card">
+               <div class="form-group">
+                 <label for="">Seleccione Sorteo</label>
+                 <select name="" id="" class="form-control">
+                 <option value=""><?= " Sorteo No. " .$datos['sorteo']?></option>
+               </select>
+               
+               </div>
+               
+             
+               <h2 id="sorteo" class="text-center"><?= " Sorteo No. " .$datos['sorteo']?></h2>
+               <h5 class="text-center"><strong>Jugado el: </strong><?= $datos['fecha_sorteo'];?></h5>
+               <h5 class="text-center mb-5"><strong>Vencimiento: </strong><?=$datos['vencimiento_sorteo'];?></h5>
+                 <div class="table-responsive">
+                   <table class="table">
+                     <thead>
+                       <tr>
+                         <th class="text-center">No.</th>
+                         <th class="text-center">Número</th>
+                         <th class="text-center">Premio</th>
+                       </tr>
+                       <?php
+                           $n_premios = 0;
+                           foreach ($datos as $sorteo => $dato):
+                             foreach ($dato as $premio => $valor):
+                               $n_premios ++;
+                               $numero_ganador=  $valor['numero_premiado_mayor'];
+                               $valor_premio  =  $valor['pago_premio'];
+                               $tipo_premio  =  $valor['tipo'];
+                         ?>
+                       <tr>
+                         <td class="text-center"><?= "#".$n_premios ?></td>
+                         <td class="text-center"> <span style = 'color:red;'><?= $numero_ganador?></span></td>
+                           <?php if($tipo_premio == "ESPECIES"): ?>
+                         <td class="text-center"><?= $valor_premio?></td>
+                           <?php else: ?>
+                         <td class="text-center"><span style = 'color:green;'>L. <?= $valor_premio?></span></td>
+                           <?php endif; ?>
+                       </tr>
+ 
+                       <?php
+                           endforeach;
+                         endforeach;
+                   ?>
+                     </thead>
+                   </table>
+                </div>
+             </div>
+           </div>
+                            
+           <div class="modal-footer">
+             <a href="index.php"><button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Cerrar</button></a>
+           </div>
+         </div>
+       </div>
+     </div><!--Fin modal loteria Mayor-->
+ 
+     <!--Inicio modal loteria Menor-->
+     <div class="modal fade" id="loteriaMenor" aria-labelledby="exampleModalToggleLabel2" tabindex="-1" aria-hidden="true" style="display: none;">
+       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Sorteo Lotería Menor</h1>
+             <a href="index.php"> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+           </div>
+           <div class="modal-body">
+             <div class="card p-2">
+                 <div class="card-header">
+                     <h2 class="text-center">Sorteo No. <?= $datosMenor['sorteo']?></h2>
+                     <h5 class="text-center"><strong>Jugado el: <?= $datosMenor['fecha_sorteo']?></strong> </h5>
+                     <h5 class="text-center mb-5"><strong>Vencimiento: <?= $datosMenor['vencimiento_sorteo']?></strong> </h5>
+                 </div>
+ 
+                         <?php 
+                         //codigo PHP
+                                   foreach ($datosMenor as $sorteoMenor => $registrosMenor):
+                                     foreach ($registrosMenor as $key => $premios):
+                                         $premios_menor = $premios['premios_menores_id'];
+                                       // $pago_premio = $premio['pago_premio'];
+                           ?>
+ 
+                          <?php  if ($premios_menor == 1): ?>
+                 <div class="input-group input-group-lg mb-4">
+                    <span class="input-group-text" id="inputGroup-sizing-lg" style="border-color: green !important; color: black !important;">Número Derecho</span>
+                     <input type="text" class="form-control" value="<?= $premios['numero_premiado_menor']?>" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" style="color: green !important; border-color: green !important;">
+                 </div>
+ 
+                        <?php  elseif ($premios_menor == 2): ?>
+                 <table class="table table-striped table-inverse table-responsive">
+                   <thead class="thead-inverse">
+                     <tr>
+                       <th class="text-center">Serie</th>
+                       <th class="text-center">Premio</th>
+                     </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <td class="text-center"><span style = 'color:red;'> <?= $premios['numero_premiado_menor']?></td>
+                         <td class="text-center"><span style = "color:rgb(0,143,5); "> Lps <?= number_format($premios['monto'], 2)?></td>
+                       </tr>
+                     </tbody>
+                 </table>
+ 
+                         <?php  elseif ($premios_menor == 3): ?>
+                 <div class="input-group input-group-lg mb-4 mt-4">
+                     <span class="input-group-text" id="inputGroup-sizing-lg" style="border-color: green !important; color: black !important;">Número Reves</span>
+                     <input type="text" class="form-control" value="<?= $premios['numero_premiado_menor']?>" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" style="color: green !important; border-color: green !important;">
+                 </div> 
+                     
+                         <?php  elseif ($premios_menor == 4 || $premios_menor == 5 || $premios_menor == 6): ?>
+                   <table class="table table-striped table-inverse table-responsive">
+                     <thead class="thead-inverse">
+                       <tr>
+                       <th class="text-center">Serie</th>
+                       <th class="text-center">Premio</th>
+                       </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                         <td class="text-center"><span style = 'color:red;'> <?= $premios['numero_premiado_menor']?></td>
+                         <td class="text-center"><span style = "color:rgb(0,143,5); "> Lps <?= number_format($premios['monto'], 2)?></td>
+                         </tr>
+                       </tbody>
+                   </table>
+ 
+                            <?php 
+                                endif; 
+                               endforeach;
+                             endforeach; 
+                             ?> 
+                   
+              </div> <!--Fin card -->
+           </div> <!--Fin modal Body -->
+           <div class="modal-footer">
+             <a href="index.html">  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Cerrar</button></a>
+           </div>
+       </div>
+     </div>
+   </div><!--fin modal loteria Menor-->
+    <!---------------------------------------CIERRE DE MENU--------------------------------------->
+  
+<a href="https://api.whatsapp.com/send?phone=50433120275" class="btn-wsp" target="_blank">
+	    <i class="fa fa-whatsapp icono"></i>
+	</a>
+
+<div class="container">
+   <div lass="row mt-5 mb-5 justify-content-center mx-auto">
+       <div class="col-sm-12 contacto mx-auto">
+           <h2 class="text-center pt-5"><strong>Nueva Modalidad de Juego</strong></h2>
+
+           <div class="accordion mt-5 mb-4 ps-3" id="accordionExample">
+            <!-- ITEM 1 -->
+             <div class="accordion-item">
+               <h1 class="accordion-header">
+                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                 Conocé una nueva modalidad 
+                 </button>
+               </h1>
+               <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                 <div class="accordion-body align-content-center">
+                   <strong>Te presentamos nuestra nueva modalidad de juego con la cual vos podés ser un nuevo millonario.</strong> 
+                        <div class="fb-video" data-href="https://fb.watch/mBTNNt07QI/" data-width="600" data-show-text="false"></div>
+                 </div>
+               </div>
+             </div>
+             <!-- ITEM 2 -->
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                 Como podés jugar y ganar
+                 </button>
+               </h2>
+               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                 <div class="accordion-body">
+                   <strong>Así es como podés jugar y ganar con La Grande de la Lotería Nacional </strong> 
+                   <p>¡Vos podés ser nuestro próximo millonario, con nuestra nueva modalidad de juego que te dará muchos premios! 🤑🎉.</p>
+
+                   <div class="fb-video" data-href="https://fb.watch/mDqb6umplR/" data-width="600" data-show-text="false"></div>
+                 </div>
+               </div>
+             </div>
+
+           <!-- ITEM 3 -->
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   Forma parte de nuestros Vendedores
+                 </button>
+               </h2>
+               <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                 <div class="accordion-body">
+                    <strong><p>¿Querés convertirte en un fabricante de millonarios y generar ingresos para ti o para tu negocio? 🤑🤑🤑</p></strong>
+                    <strong><p>Contáctanos y adquiere tu Fábrica De Millonarios: 3312-0275 (ÚNICAMENTE WHATSAPP)</p></strong>
+                    <strong><p>Correo de ayuda: ayuda@pani.hn 🤑🤑🤑</p></strong>
+                    <!-- Imagen modal -->
+                     <img id="myImg" src="img/vender-loteria.jpg" alt="PANI" style="width:100%;max-width:300px">
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                     <div id="caption"></div>
+                    </div>
+               </div>
+             </div>
+           </div>
+           <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+           </div>
+          <!-- ITEM 4 -->
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                 Indumentaria de los vendedores
+                 </button>
+               </h2>
+               <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                 <div class="accordion-body">
+                 <strong><p>Esta es la indumentaria de los vendedores que te llevarán la suerte y te convertirán a vos en nuestro próximo millonario. 🤑🤑🤑</p></strong>
+               
+                 <div class="fb-video" data-href="https://fb.watch/mBX8VugZIj/" data-width="600" data-show-text="false"> </div>
+               </div> 
+             </div>
+            </div>
+          <!-- ITEM 5 -->
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                 Identificá los puntos de venta
+                 </button>
+               </h2>
+               <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                 <div class="accordion-body">
+                 <strong><p>¿Ya sabés dónde comprar La Grande?</p></strong>
+                 <strong><p>La encontrás como el #PuntoAmarillo que te convertirá en el próximo millonario con los siguientes elementos que te presentamos en este video.</p></strong>
+                 <strong><a href="https://fb.watch/mEtrb99cSL/" target="_blank" style="text-decoration: none !important;"><p>Link del video</p></a></strong>          
+               </div> 
+             </div>
+           </div>
+           <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+           <div id="fb-root"></div>
+           <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v17.0" nonce="dzE1Lwa1"></script>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+</script>
+   <!-------------------------------------------INICIO DE FOOTER---------------------------------------------------------->
+   <footer class="footer">
+    <div class="grupo-1">
+      <div class="box"><!--box del logo-->
+        <figure>
+          <a href="">
+            <img src="img/pani2.png" alt="Logo Pani">
+          </a>
+        </figure>
+      </div>
+      <div class="box"><!--box de texto sobre pani-->
+        <h2>Sobre el PANI</h2>
+        <P class="text-justify"> Somos una institución del estado con autonomía técnica, administrativa y patrimonio propio, generando recursos para proyecto sociales. A través de la producción y comercialización de las loterías del Estado para el bienestar integral de la población.</P>
+      </div>
+      <div class="box"><!--box de redes sociales-->
+        <h2>Redes Sociales</h2>
+        <div class="red-social">
+        <a href="https://www.facebook.com/panihonduras" target="_blank" style="background-color: transparent;"><i class="bi-facebook social"></i></a>
+        <a href="https://www.instagram.com/loterianacionalpani/?hl=en" target="_blank" style="background-color: transparent;"><i class="bi-instagram social"></i></a>
+        <a href="https://www.tiktok.com/discover/pani-honduras?lang=en" target="_blank" style="background-color: transparent;"><i class="bi-tiktok social"></i></a>
+        </div>
+      </div><!--Fin de box3-->
+      <div class="box">
+        <h2>App PANI</h2>
+        <div class="">
+          <!--Plugin de facebook en tiempo real-->
+          <a href="https://play.google.com/store/apps/details?id=com.pani.honduras&hl=es" target="_blank">
+          <img src="img/googleplay.png" alt="logo google play">
+          </a>
+          <!--Boton de subir al inicio-->
+          <button class="toTop" id="toTop">
+            <svg viewBox="0 0 24 24">
+              <path d="m4 16 8-8 8 8"></path>
+            </svg>
+          </button>
+        </div>
+        
+      </div>
+             
+    </div>
+    
+    <div class="grupo-2">
+     <hr size="4">
+  
+      <small>Copyright &copy; PANI<b> 2023</b> - Todos los derechos reservados.</small>
+    </div>
+    
+  </footer>
+  
+  
+  
+               <script src="/js/jquery-3.5.1.slim.min.js"></script>
+              <script src="/js/bootstrap.min.js"></script>
+  
+              <script>      
+                  const toTop = (() => {
+                    let button = document.getElementById("toTop");
+                    window.onscroll = () => {
+                      button.classList[
+                          (document.documentElement.scrollTop > 200) ? "add" : "remove"
+                        ]("is-visible")
+                    }
+                    button.onclick = () => {
+                      window.scrollTo({
+                        top:0, behavior:"smooth"
+                      })
+                    }
+                  })();/*]]>*/
+              </script>
+    <!-------------------------------------------FINAL DE FOOTER/-------------------------------------->        
+  <script>$("#botonprueba").click(function(){
+      Swal.fire({
+          type:'info',
+          title:'mensaje',
+          text:'prueba'
+      });
+  });</script>
+  
+  
+  
+  
+  <!--Scripts del sitio web-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="zSsNCouo"></script>
+  <script src="js/bootnavbar.js"></script>
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="jquery/jquery-3.3.1.min.js"></script>
+  <script src="jquery/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="Plugins/sweetalert2/sweetalert2.all.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/main.js"></script>
+  <script> new bootnavbar();</script>
+  <!--Scripts del sitio web-->
+<!-------------------------------------------FIN DE FOOTER---------------------------------------------------------->
+</body>
+  <!-------------------------------------------FIN DE FOOTER------------------------------------------------------------->    
