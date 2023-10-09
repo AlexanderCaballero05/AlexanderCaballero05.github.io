@@ -62,336 +62,335 @@
     <body>
     
     <!--Inicio, Items Header-->
-     <nav class="navbar navbar-expand-md navbar-light bg-light fixed p-2" id="main_navbar">
-        <div class="container-fluid">
-       <a class="navbar-brand" href="" style="background-color: transparent !important;"><!--Referencia del logo de la empresa-->
-        <img src="img/pani1.png" class="margin d-block" alt="logo-pani" width="160px">
-      </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-          <ul class="navbar-nav mx-auto mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.php">
-                Inicio
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Sorteos
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#loteriaMayor">Lotería Mayor</a></li>
-                <li><a class="dropdown-item" href="#" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#loteriaMenor">Lotería Menor</a></li>
-                <li><a class="dropdown-item" href="#" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#">Lotería La Grande</a></li>
-                <li><a class="dropdown-item" href="#" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#">Lotería La Chica</a></li>
-                
-              </ul>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#ModalPremios">
-              Premios</a>
-            </li>
-    
-            <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown">
-                   Institución
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item dropdown"><!--Quienes somos-->
-                      <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Quienes Somos
-                      </a>
-                      <ul class="dropdown-menu">
-                        <!--<li><a class="dropdown-item" href="institucion.php">Historia</a></li>-->
-                        <li><a class="dropdown-item" href="institucion.php">Misión/Visión</a></li>
-                        <li><a class="dropdown-item" href="institucion.php">Valores</a></li>
-                        <li><hr class="dropdown-divider"/></li>
-                        <li><a class="dropdown-item" href="img/organigrama.jpg" target="_blank">Organigrama</a></li>   
-                      </ul>
-                    </li><!--Quienes somos-->
-    
-                    <li class="nav-item dropdown"><!--Direccion-->
-                      <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Direcciones
-                      </a>
-                      <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Dirección Ejecutiva</a></li>
-                        <li><a class="dropdown-item" href="#">Sub dirección Ejecutiva</a></li>
-    
-                      </ul>
-                    </li><!--Direccion-->
-    
-                    <li class="nav-item dropdown"><!--Secretaria-->
-                      <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Secretaria
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Secretaria General</a></li>
-                        <li><a class="dropdown-item" href="#">Asesoría legal</a></li>
-                      </ul>
-                    </li><!--Secretaria-->
-    
-    
-                    <li class="nav-item dropdown"><!--Unidades-->
-                      <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Unidades
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Unid. de Relaciones Públicas</a></li>
-                        <li><a class="dropdown-item" href="#">Unid. de Planificación</a></li>
-                        <li><a class="dropdown-item" href="autoridades.php">Unid. de Informática</a></li>
-                        <?php
-                        $option = 1;
-                        // '<li><a class="dropdown-item" href="autoridades.php">Unid. de Informática</a></li>'
-                        ?>
-                      </ul>
-                    </li><!--Unidades-->
-    
-                    <li class="nav-item dropdown"><!--Gerencias-->
-                      <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Gerencias
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Gcia. de Imprenta</a></li>
-                        <li><a class="dropdown-item" href="#">Gcia. de Comercialización</a></li>
-                        <li><a class="dropdown-item" href="#">Gcia. Administrativa</a></li>
-                        <li><a class="dropdown-item" href="#">Gcia. Financiera</a></li>
-                      </ul>
-                    </li>              
-                  </ul>
-                </li>
-    
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.php">
-                Contacto
-              </a>
-            </li>
-            <!-- Item Nueva Modalidad -->
-            <li class="nav-item">
-              <a class="nav-link animated-button1" href="nuevaLoteria.php">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Nueva-Modalidad
-              </a>
-            </li>
-          </ul>
+ <nav class="navbar navbar-expand-md navbar-light bg-light fixed p-2" id="main_navbar">
+   <div class="container-fluid">
+  <a class="navbar-brand" href="" style="background-color: transparent !important;"><!--Referencia del logo de la empresa-->
+   <img src="img/pani1.png" class="margin d-block" alt="logo-pani" width="160px">
+ </a>
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+     <ul class="navbar-nav mx-auto mb-lg-0">
+       <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="index.html">
+           Inicio
+         </a>
+       </li>
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Sorteos
+         </a>
+         <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="#" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#loteriaMayor">Lotería Mayor</a></li>
+           <li><a class="dropdown-item" href="#" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#loteriaMenor">Lotería Menor</a></li>
+           <li><a class="dropdown-item" href="#" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#">Lotería La Grande</a></li>
+           <li><a class="dropdown-item" href="#" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#">Lotería La Chica</a></li>
+           
+         </ul>
+       </li>
+       <li class="nav-item">
+       <a class="nav-link" href="" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#ModalPremios">
+         Premios</a>
+       </li>
+
+       <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown">
+              Institución
+             </a>
+             <ul class="dropdown-menu">
+               <li class="nav-item dropdown"><!--Quienes somos-->
+                 <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                   Quienes Somos
+                 </a>
+                 <ul class="dropdown-menu">
+                   <!--<li><a class="dropdown-item" href="institucion.php">Historia</a></li>-->
+                   <li><a class="dropdown-item" href="institucion.html">Misión/Visión</a></li>
+                   <li><a class="dropdown-item" href="institucion.html">Valores</a></li>
+                   <li><hr class="dropdown-divider"/></li>
+                   <li><a class="dropdown-item" href="img/organigrama.jpg" target="_blank">Organigrama</a></li>   
+                 </ul>
+               </li><!--Quienes somos-->
+
+               <li class="nav-item dropdown"><!--Direccion-->
+                 <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                   Direcciones
+                 </a>
+                 <ul class="dropdown-menu">
+                 <li><a class="dropdown-item" href="#">Dirección Ejecutiva</a></li>
+                   <li><a class="dropdown-item" href="#">Sub dirección Ejecutiva</a></li>
+
+                 </ul>
+               </li><!--Direccion-->
+
+               <li class="nav-item dropdown"><!--Secretaria-->
+                 <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                   Secretaria
+                 </a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Secretaria General</a></li>
+                   <li><a class="dropdown-item" href="#">Asesoría legal</a></li>
+                 </ul>
+               </li><!--Secretaria-->
+
+
+               <li class="nav-item dropdown"><!--Unidades-->
+                 <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                   Unidades
+                 </a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Unid. de Relaciones Públicas</a></li>
+                   <li><a class="dropdown-item" href="#">Unid. de Planificación</a></li>
+                   <li><a class="dropdown-item" href="autoridades.php">Unid. de Informática</a></li>
+                   <?php
+                   $option = 1;
+                   // '<li><a class="dropdown-item" href="autoridades.php">Unid. de Informática</a></li>'
+                   ?>
+                 </ul>
+               </li><!--Unidades-->
+
+               <li class="nav-item dropdown"><!--Gerencias-->
+                 <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                   Gerencias
+                 </a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Gcia. de Imprenta</a></li>
+                   <li><a class="dropdown-item" href="#">Gcia. de Comercialización</a></li>
+                   <li><a class="dropdown-item" href="#">Gcia. Administrativa</a></li>
+                   <li><a class="dropdown-item" href="#">Gcia. Financiera</a></li>
+                 </ul>
+               </li>              
+             </ul>
+           </li>
+
+       <li class="nav-item">
+         <a class="nav-link" href="contacto.html">
+           Contacto
+         </a>
+       </li>
+       <!-- Item Nueva Modalidad -->
+       <li class="nav-item">
+         <a class="nav-link animated-button1" href="nuevaLoteria.html">
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+           Nueva-Modalidad
+         </a>
+       </li>
+     </ul>
+   </div>
+ </div>
+</nav><!--Fin items del Header-->
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="VpSfLOcE"></script>
+  <!--CODIGO CONSULTA DE NUMEROS PREMIADOS LOTERIA MAYOR Y MENOR con Ventana Modales-->
+<div class="modal fade" id="ModalPremios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h1 style ="display:none;" class="modal-title fs-5 text-center" id="Modallabel">Consulta de premios <strong> 'La Grande'</strong></h1>
+       <h1 style ="display:none;" class="modal-title fs-5 text-center" id="Modallabe2">Consulta de premios <strong> 'La Chica'</strong></h1>
+       <h1 class="modal-title fs-5 text-center" id="Modallabe" >Consulta de premios</h1>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+       <div class="modal-body">
+         <form id="formul">
+         <div class="form-group">
+           <!--input tipo Loteria-->
+               <div class="form-floating mb-3">
+                 <select class="form-select" id ="select-tipo-sorteo" aria-label="Floating label select example" style="background-image: url(img/40319.png)">
+                   <option  autofocus selected disabled>--Seleccione--</option>
+                   <option value = "1">Mayor</option>
+                   <option value = "2">Menor</option>
+                 </select>
+                 <label for="floatingSelect">Loteria</label>
+               </div>
+           <!--input sorteo-->
+               <div class="form-floating mb-3">
+                 <input style ="display:none;" type = "number"  class="form-control" minlength="4" maxlength="4" id="sorteo-premio" name="sorteo-premio" placeholder="name@example.com">
+                 <label style ="display:none;" for="floatingInput" id="sorteo-label">Sorteo</label>
+               </div>
+           <!--input billete-->
+               <div class="form-floating mb-3">
+                 <input style ="display:none;" type = "number" class="form-control" min = "0" max = "99999" id="billete-premio" placeholder="name@example.com" >
+                 <label style ="display:none;"  for="floatingInput" id="billete-label">Billete</label>
+               </div>
+           <!--input numero-->
+               <div class="form-floating mb-3">
+                 <input style ="display:none;" type = "number" class="form-control" min = "1" max = "2" id="numero-premio" placeholder="name@example.com">
+                 <label style ="display:none;" for="floatingInput" id="numero-label">Numero</label>
+               </div>
+           <!--input serie-->
+               <div class="form-floating mb-3">
+                 <input style ="display:none;" type="number" class="form-control" min = "0" max = "99999" id="serie-premio" placeholder="name@example.com">
+                 <label style ="display:none;" for="floatingInput"  id="serie-label">Serie</label>
+               </div>
+           <!--Button-->
+                   <span id='btn-consulta-premio' class="btn btn-primary" style='margin-top:10px; width:100%' onclick="consultar_premio()">CONSULTAR PREMIO <i class="bi-send"></i></span>
+         </div>
+         </form>
+       </div>
+       <div class="modal-footer">
+          <div class="container" id="respuesta-consulta-premio"></div>
         </div>
-      </div>
-    </nav><!--Fin items del Header-->
-    
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="VpSfLOcE"></script>
-       <!--CODIGO CONSULTA DE NUMEROS PREMIADOS LOTERIA MAYOR Y MENOR con Ventana Modales-->
-    <div class="modal fade" id="ModalPremios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 style ="display:none;" class="modal-title fs-5 text-center" id="Modallabel">Consulta de premios <strong> 'La Grande'</strong></h1>
-            <h1 style ="display:none;" class="modal-title fs-5 text-center" id="Modallabe2">Consulta de premios <strong> 'La Chica'</strong></h1>
-            <h1 class="modal-title fs-5 text-center" id="Modallabe" >Consulta de premios</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
-            <div class="modal-body">
-              <form id="formul">
-              <div class="form-group">
-                <!--input tipo Loteria-->
-                    <div class="form-floating mb-3">
-                      <select class="form-select" id ="select-tipo-sorteo" aria-label="Floating label select example" style="background-image: url(img/40319.png)">
-                        <option  autofocus selected disabled>--Seleccione--</option>
-                        <option value = "1">Mayor</option>
-                        <option value = "2">Menor</option>
-                      </select>
-                      <label for="floatingSelect">Loteria</label>
-                    </div>
-                <!--input sorteo-->
-                    <div class="form-floating mb-3">
-                      <input style ="display:none;" type = "number"  class="form-control" minlength="4" maxlength="4" id="sorteo-premio" name="sorteo-premio" placeholder="name@example.com">
-                      <label style ="display:none;" for="floatingInput" id="sorteo-label">Sorteo</label>
-                    </div>
-                <!--input billete-->
-                    <div class="form-floating mb-3">
-                      <input style ="display:none;" type = "number" class="form-control" min = "0" max = "99999" id="billete-premio" placeholder="name@example.com" >
-                      <label style ="display:none;"  for="floatingInput" id="billete-label">Billete</label>
-                    </div>
-                <!--input numero-->
-                    <div class="form-floating mb-3">
-                      <input style ="display:none;" type = "number" class="form-control" min = "1" max = "2" id="numero-premio" placeholder="name@example.com">
-                      <label style ="display:none;" for="floatingInput" id="numero-label">Numero</label>
-                    </div>
-                <!--input serie-->
-                    <div class="form-floating mb-3">
-                      <input style ="display:none;" type="number" class="form-control" min = "0" max = "99999" id="serie-premio" placeholder="name@example.com">
-                      <label style ="display:none;" for="floatingInput"  id="serie-label">Serie</label>
-                    </div>
-                <!--Button-->
-                        <span id='btn-consulta-premio' class="btn btn-primary" style='margin-top:10px; width:100%' onclick="consultar_premio()">CONSULTAR PREMIO <i class="bi-send"></i></span>
-              </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-               <div class="container" id="respuesta-consulta-premio"></div>
+ </div>
+</div>
+</div>
+<!--fIN DECODIGO CONSULTA DE NUMEROS PREMIADOS LOTERIA MAYOR Y MENOR con Ventana Modales-->
+
+<!-------------------------------------------------------------------------------------------------------
+----------CONSULTANDO API-REST-PANI DE LOS NUMEROS PREMIADOS DE LOS SORTEOS RECIEN JUGADOS---------------
+--------------------------------------------------------------------------------------------------------->  
+<!--Inicio modal loteria Mayor-->
+   <div class="modal fade" id="loteriaMayor" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-hidden="true" style="display: none;">
+     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Lotería Mayor</h1>
+           <a href="index.php"> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+         </div>
+         <div class="modal-body">
+           <div class="card">
+             <div class="form-group">
+               <label for="">Seleccione Sorteo</label>
+               <select name="" id="" class="form-control">
+               <option value=""><?= " Sorteo No. " .$datos['sorteo']?></option>
+             </select>
+             
              </div>
-      </div>
-    </div>
-    </div>
-    <!--fIN DECODIGO CONSULTA DE NUMEROS PREMIADOS LOTERIA MAYOR Y MENOR con Ventana Modales-->
-    
-    <!-------------------------------------------------------------------------------------------------------
-    ----------CONSULTANDO API-REST-PANI DE LOS NUMEROS PREMIADOS DE LOS SORTEOS RECIEN JUGADOS---------------
-    --------------------------------------------------------------------------------------------------------->  
-    <!--Inicio modal loteria Mayor-->
-        <div class="modal fade" id="loteriaMayor" aria-labelledby="exampleModalToggleLabel" tabindex="-1" aria-hidden="true" style="display: none;">
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Lotería Mayor</h1>
-                <a href="index.php"> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+             
+           
+             <h2 id="sorteo" class="text-center"><?= " Sorteo No. " .$datos['sorteo']?></h2>
+             <h5 class="text-center"><strong>Jugado el: </strong><?= $datos['fecha_sorteo'];?></h5>
+             <h5 class="text-center mb-5"><strong>Vencimiento: </strong><?=$datos['vencimiento_sorteo'];?></h5>
+               <div class="table-responsive">
+                 <table class="table">
+                   <thead>
+                     <tr>
+                       <th class="text-center">No.</th>
+                       <th class="text-center">Número</th>
+                       <th class="text-center">Premio</th>
+                     </tr>
+                     <?php
+                         $n_premios = 0;
+                         foreach ($datos as $sorteo => $dato):
+                           foreach ($dato as $premio => $valor):
+                             $n_premios ++;
+                             $numero_ganador=  $valor['numero_premiado_mayor'];
+                             $valor_premio  =  $valor['pago_premio'];
+                             $tipo_premio  =  $valor['tipo'];
+                       ?>
+                     <tr>
+                       <td class="text-center"><?= "#".$n_premios ?></td>
+                       <td class="text-center"> <span style = 'color:red;'><?= $numero_ganador?></span></td>
+                         <?php if($tipo_premio == "ESPECIES"): ?>
+                       <td class="text-center"><?= $valor_premio?></td>
+                         <?php else: ?>
+                       <td class="text-center"><span style = 'color:green;'>L. <?= $valor_premio?></span></td>
+                         <?php endif; ?>
+                     </tr>
+
+                     <?php
+                         endforeach;
+                       endforeach;
+                 ?>
+                   </thead>
+                 </table>
               </div>
-              <div class="modal-body">
-                <div class="card">
-                  <div class="form-group">
-                    <label for="">Seleccione Sorteo</label>
-                    <select name="" id="" class="form-control">
-                    <option value=""><?= " Sorteo No. " .$datos['sorteo']?></option>
-                  </select>
-                  
-                  </div>
-                  
-                
-                  <h2 id="sorteo" class="text-center"><?= " Sorteo No. " .$datos['sorteo']?></h2>
-                  <h5 class="text-center"><strong>Jugado el: </strong><?= $datos['fecha_sorteo'];?></h5>
-                  <h5 class="text-center mb-5"><strong>Vencimiento: </strong><?=$datos['vencimiento_sorteo'];?></h5>
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th class="text-center">No.</th>
-                            <th class="text-center">Número</th>
-                            <th class="text-center">Premio</th>
-                          </tr>
-                          <?php
-                              $n_premios = 0;
-                              foreach ($datos as $sorteo => $dato):
-                                foreach ($dato as $premio => $valor):
-                                  $n_premios ++;
-                                  $numero_ganador=  $valor['numero_premiado_mayor'];
-                                  $valor_premio  =  $valor['pago_premio'];
-                                  $tipo_premio  =  $valor['tipo'];
-                            ?>
-                          <tr>
-                            <td class="text-center"><?= "#".$n_premios ?></td>
-                            <td class="text-center"> <span style = 'color:red;'><?= $numero_ganador?></span></td>
-                              <?php if($tipo_premio == "ESPECIES"): ?>
-                            <td class="text-center"><?= $valor_premio?></td>
-                              <?php else: ?>
-                            <td class="text-center"><span style = 'color:green;'>L. <?= $valor_premio?></span></td>
-                              <?php endif; ?>
-                          </tr>
-    
-                          <?php
-                              endforeach;
-                            endforeach;
-                      ?>
-                        </thead>
-                      </table>
-                   </div>
-                </div>
-              </div>
-                               
-              <div class="modal-footer">
-                <a href="index.php"><button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Cerrar</button></a>
-              </div>
-            </div>
-          </div>
-        </div><!--Fin modal loteria Mayor-->
-    
-        <!--Inicio modal loteria Menor-->
-        <div class="modal fade" id="loteriaMenor" aria-labelledby="exampleModalToggleLabel2" tabindex="-1" aria-hidden="true" style="display: none;">
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Sorteo Lotería Menor</h1>
-                <a href="index.php"> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
-              </div>
-              <div class="modal-body">
-                <div class="card p-2">
-                    <div class="card-header">
-                        <h2 class="text-center">Sorteo No. <?= $datosMenor['sorteo']?></h2>
-                        <h5 class="text-center"><strong>Jugado el: <?= $datosMenor['fecha_sorteo']?></strong> </h5>
-                        <h5 class="text-center mb-5"><strong>Vencimiento: <?= $datosMenor['vencimiento_sorteo']?></strong> </h5>
-                    </div>
-    
-                            <?php 
-                            //codigo PHP
-                                      foreach ($datosMenor as $sorteoMenor => $registrosMenor):
-                                        foreach ($registrosMenor as $key => $premios):
-                                            $premios_menor = $premios['premios_menores_id'];
-                                          // $pago_premio = $premio['pago_premio'];
-                              ?>
-    
-                             <?php  if ($premios_menor == 1): ?>
-                    <div class="input-group input-group-lg mb-4">
-                       <span class="input-group-text" id="inputGroup-sizing-lg" style="border-color: green !important; color: black !important;">Número Derecho</span>
-                        <input type="text" class="form-control" value="<?= $premios['numero_premiado_menor']?>" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" style="color: green !important; border-color: green !important;">
-                    </div>
-    
-                           <?php  elseif ($premios_menor == 2): ?>
-                    <table class="table table-striped table-inverse table-responsive">
-                      <thead class="thead-inverse">
-                        <tr>
-                          <th class="text-center">Serie</th>
-                          <th class="text-center">Premio</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="text-center"><span style = 'color:red;'> <?= $premios['numero_premiado_menor']?></td>
-                            <td class="text-center"><span style = "color:rgb(0,143,5); "> Lps <?= number_format($premios['monto'], 2)?></td>
-                          </tr>
-                        </tbody>
-                    </table>
-    
-                            <?php  elseif ($premios_menor == 3): ?>
-                    <div class="input-group input-group-lg mb-4 mt-4">
-                        <span class="input-group-text" id="inputGroup-sizing-lg" style="border-color: green !important; color: black !important;">Número Reves</span>
-                        <input type="text" class="form-control" value="<?= $premios['numero_premiado_menor']?>" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" style="color: green !important; border-color: green !important;">
-                    </div> 
-                        
-                            <?php  elseif ($premios_menor == 4 || $premios_menor == 5 || $premios_menor == 6): ?>
-                      <table class="table table-striped table-inverse table-responsive">
-                        <thead class="thead-inverse">
-                          <tr>
-                          <th class="text-center">Serie</th>
-                          <th class="text-center">Premio</th>
-                          </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                            <td class="text-center"><span style = 'color:red;'> <?= $premios['numero_premiado_menor']?></td>
-                            <td class="text-center"><span style = "color:rgb(0,143,5); "> Lps <?= number_format($premios['monto'], 2)?></td>
-                            </tr>
-                          </tbody>
-                      </table>
-    
-                               <?php 
-                                   endif; 
-                                  endforeach;
-                                endforeach; 
-                                ?> 
-                      
-                 </div> <!--Fin card -->
-              </div> <!--Fin modal Body -->
-              <div class="modal-footer">
-                <a href="index.html">  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Cerrar</button></a>
-              </div>
-          </div>
-        </div>
-      </div><!--fin modal loteria Menor-->
-    <!---------------------------------------CIERRE DE MENU--------------------------------------->
- <body>
+           </div>
+         </div>
+                          
+         <div class="modal-footer">
+           <a href="index.php"><button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Cerrar</button></a>
+         </div>
+       </div>
+     </div>
+   </div><!--Fin modal loteria Mayor-->
+
+   <!--Inicio modal loteria Menor-->
+   <div class="modal fade" id="loteriaMenor" aria-labelledby="exampleModalToggleLabel2" tabindex="-1" aria-hidden="true" style="display: none;">
+     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Sorteo Lotería Menor</h1>
+           <a href="index.php"> <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+         </div>
+         <div class="modal-body">
+           <div class="card p-2">
+               <div class="card-header">
+                   <h2 class="text-center">Sorteo No. <?= $datosMenor['sorteo']?></h2>
+                   <h5 class="text-center"><strong>Jugado el: <?= $datosMenor['fecha_sorteo']?></strong> </h5>
+                   <h5 class="text-center mb-5"><strong>Vencimiento: <?= $datosMenor['vencimiento_sorteo']?></strong> </h5>
+               </div>
+
+                       <?php 
+                       //codigo PHP
+                                 foreach ($datosMenor as $sorteoMenor => $registrosMenor):
+                                   foreach ($registrosMenor as $key => $premios):
+                                       $premios_menor = $premios['premios_menores_id'];
+                                     // $pago_premio = $premio['pago_premio'];
+                         ?>
+
+                       <?php  if ($premios_menor == 1): ?>
+               <div class="input-group input-group-lg mb-4">
+                  <span class="input-group-text" id="inputGroup-sizing-lg" style="border-color: green !important; color: black !important;">Número Derecho</span>
+                   <input type="text" class="form-control" value="<?= $premios['numero_premiado_menor']?>" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" style="color: green !important; border-color: green !important;">
+               </div>
+
+                      <?php  elseif ($premios_menor == 2): ?>
+               <table class="table table-striped table-inverse table-responsive">
+                 <thead class="thead-inverse">
+                   <tr>
+                     <th class="text-center">Serie</th>
+                     <th class="text-center">Premio</th>
+                   </tr>
+                   </thead>
+                   <tbody>
+                     <tr>
+                       <td class="text-center"><span style = 'color:red;'> <?= $premios['numero_premiado_menor']?></td>
+                       <td class="text-center"><span style = "color:rgb(0,143,5); "> Lps <?= number_format($premios['monto'], 2)?></td>
+                     </tr>
+                   </tbody>
+               </table>
+
+                       <?php  elseif ($premios_menor == 3): ?>
+               <div class="input-group input-group-lg mb-4 mt-4">
+                   <span class="input-group-text" id="inputGroup-sizing-lg" style="border-color: green !important; color: black !important;">Número Reves</span>
+                   <input type="text" class="form-control" value="<?= $premios['numero_premiado_menor']?>" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" style="color: green !important; border-color: green !important;">
+               </div> 
+                   
+                       <?php  elseif ($premios_menor == 4 || $premios_menor == 5 || $premios_menor == 6): ?>
+                 <table class="table table-striped table-inverse table-responsive">
+                   <thead class="thead-inverse">
+                     <tr>
+                     <th class="text-center">Serie</th>
+                     <th class="text-center">Premio</th>
+                     </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                       <td class="text-center"><span style = 'color:red;'> <?= $premios['numero_premiado_menor']?></td>
+                       <td class="text-center"><span style = "color:rgb(0,143,5); "> Lps <?= number_format($premios['monto'], 2)?></td>
+                       </tr>
+                     </tbody>
+                 </table>
+
+                          <?php 
+                              endif; 
+                             endforeach;
+                           endforeach; 
+                           ?> 
+                 
+            </div> <!--Fin card -->
+         </div> <!--Fin modal Body -->
+         <div class="modal-footer">
+           <a href="index.html">  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Cerrar</button></a>
+         </div>
+     </div>
+   </div>
+ </div><!--fin modal loteria Meno
+ 
     <!------------------------------Seccion Institucion---------------------------------->
     <div class="container m-auto">
         <div class="row mt-5 mb-5 text-center m-auto">
